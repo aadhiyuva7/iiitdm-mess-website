@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<html>
+<head>
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,900&display=swap"
+      rel="stylesheet"
+    />
+	<title> Indian Institute of Information Technology, 
+		Design and Manufacturing, Kurnool 
+	</title>
+	<link rel="stylesheet" href="styleori.css">
+	 <table border="0" style="box-shadow: 5px 5px #888888"> <tr>
+		<div class = "box" >
+			<td> <a href="newpagetrail.html"><img src="logot.png"></a> </td>
+			<td style="background-color:white"> <b> Indian Institute of Information Technology, Design and Manufacturing, Kurnool </b></td> </tr> </table> 
+		</div>	
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>   
+	<section class="header">
+		<nav>
+			<div class="nav-links" id="navLinks">
+				<ul> <b>
+					<div class="navbar">
+					<li><a href="newpagetrial.html">Home</a></li>
+					<li><a href="bookings.html">Book slot</a></li>
+					<li><a href="#godown">Contact Us</a></li>
+					<li><a href="feedback form.html">Complaints</a></li>
+					<li><a href="messmenu.pdf">Mess menu</a></li>
+					<li><a href="Statistics1.html">Food wastage</a></li>
+					<li><a href="Aboutus.html">About Us</a></li>
+					<li><a href="faq.html">FAQs</a></li>
+					<li style="float:right"><a class="active" href="demo.html">Logout</a></li>
+					</div>
+				</b> </ul>				  
+			</div>
+			
+		</nav>
+	</br>
+	<div style="justify-content: center;">
+<div id="piechart" style="justify-content: center; margin: auto;">
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'number of kg per Day'],
+  ['Rice', 25],
+  ['roti', 28],
+  ['curries', 30],
+  ['curd', 36],
+  ['wastage', 20],
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'Mess', 'width':900, 'height':800};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new  google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>
+</div>
+</div>
+</br>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+
+
+<footer class="footer" id="godown">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col">
+				<h4>About IIITDMK</h4>
+				<ul>
+					<li><a href="Aboutus.html">about us</a></li>
+					<li><a href="https://iiitk.ac.in/">About institute</a></li>
+					<li><a href="messmenu.pdf">Mess timings</a></li>
+					<li><a href="messmenu.pdf">Mess menu</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>Help desk</h4>
+				<ul>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="Statistics1.html">Monthly statistics</a></li>
+					<li><a href="car.html">Events</a></li>
+					<li><a href="feedback form.html">Complaints</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>Address</h4>
+				<ul>
+ <a href="https://goo.gl/maps/ce84LXGKcrJA62pJ7"> <p> HillTop Dining Hall </p>
+  <p>Jagannathagattu Hill,</p>
+					 <p>Kurnool- 518 007,</p>
+					 <p>Andhra Pradesh,India</p> </a>				   
+				   
+				</ul>
+			</div>
+		   <div class="footer-col">
+				<h4>follow us</h4>
+				<div class="social-links">
+					<a href="https://www.facebook.com/IIITDM.KURNOOL/"><i class="fab fa-facebook-f"></i></a>
+					<a href="https://iiitk.ac.in/Contact-Us"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+ </footer>
+ </body>
+</html>

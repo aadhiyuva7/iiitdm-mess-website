@@ -1,0 +1,113 @@
+body{
+    text-align: center;
+    background-color: antiquewhite;
+}
+.car{
+    overflow:hidden;
+    max-width:550px;
+    position:relative;
+	display:flex;
+	justify-content: center;
+}
+
+.container{
+    height:100%;
+    width:100%;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: center;
+}
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+  }
+
+.car .car_item , .car .car_item-hidden{
+    display:none;
+}
+.car .car_item-visible{
+    display:block;
+    animation: fadeAway 0.5s ;
+}
+@keyframes fadeAway{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+        transform: opacity linear;
+    }
+}
+
+.car .car_item img{
+    width:600px;
+    height:400px;
+}
+.car_item{
+    margin:50px;
+}
+.car_actions{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    position:absolute;
+    top:200px;
+    transform:translateY(-50%);
+
+}
+.car_actions button{
+    font-size:60px;
+    border-radius:30px;
+    border:0;
+    cursor:pointer;
+	opacity:0;
+}
+
+#prev{
+    margin-left: 20px;
+}
+#next{
+    margin-right: 20px;
+}
+
+
+
+
+
+.image-index-line{
+    height: 20px;
+    width:250px;
+    text-align: center;
+}
+.image-index{
+    display:inline-block;
+    width:40px;
+    border-bottom: 3px solid rgb(65, 48, 48);
+    transition: border-top 0.5s;
+}
+
+.image-index-line .index_high{
+    animation: high 0.5s;
+}
+@keyframes high {
+    0% {
+        border-top: 1px solid black;
+        /* border-bottom: 3px solid rgb(65, 48, 48); */
+    }
+    100% {
+        border-top: 4px solid white !important;
+    }
+}
+button{
+    background-color: transparent;
+    /* border:0; */
+}
+.button{
+    margin:20px;
+}
+
+
